@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>JS Homework</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/style.min.css">
+</head>
+<body>
+	<div id="col1"></div>
+	<div id="col2">
+		<h1>TelerikAcademy JavaScript Fundamentals 2015</h1>
+		<h2>Data types and Variables</h2>
+		<div id="tasks">
+			<h3>Problem 1. JavaScript literals</h3>
+				<p>Assign all the possible JavaScript literals to different variables.</p>
+				<p id="problem1" class="output"></p>
+			<h3>Problem 2. Quoted text</h3>
+				<p>Create a string variable with quoted text in it.</p>
+			    <p>For example: `'How you doin'?', Joey said'.</p>
+			    <p id="problem2" class="output"></p>
+			<h3>Problem 3. Typeof variables</h3>
+				<p>Try typeof on all variables you created.</p>
+				<p id="problem3" class="output"></p>
+			<h3>Problem 4. Typeof null</h3>
+				<p>Create null, undefined variables and try typeof on them.</p>
+				<p id="problem4" class="output"></p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		//Problem 1. JavaScript literals
+		//Array Literals
+		var animals = ['cats', 'dogs', 'horses', 'sheeps'];
+		console.log('Array literals: the variable "animals" contains ' + animals);
+
+		//Boolean Literals
+		var a = 1,
+			b = 3;
+		var aEqualsB = (a === b);
+		console.log('Boolean literals: are the variables "a" and "b" equal? ' + aEqualsB);
+
+		//Integer Literals
+		var integer1 = 20,
+			integer2 = 3;
+		console.log('Integer literals: ' + integer1 + ', ' + integer2);
+
+		//Floating-point literals
+		var float1 = 20022.345,
+			float2 = -3.1561112;
+		console.log('Floating-point literals: ' + float1 + ', ' + float2);
+
+		//Object literals
+		var dog = { breed: "pug", colors: "beige", temperament: "lap" };
+		console.log('Object literals: this dog has ' + dog.colors + ' color and it\'s a ' + dog.breed + ' which are ' + dog.temperament + ' dogs');
+
+		//String literals
+		var string1 = 'TelerikAcademy',
+			string2 = 'programming courses',
+			string3 = 'under 1 year',
+			string4 = 'More info on http://telerikacademy.com';
+		console.log('String literals: ' + string1 + ' are ' + string2 + ' for you to become a programmer in ' + string3 + ' ' + string4);
+
+		//display Problem 1. on the web page
+		var problem1 = document.getElementById('problem1');
+		problem1.innerHTML = 'Array literals: the variable "animals" contains ' + animals + '<br>' + 'Boolean literals: are the variables "a" and "b" equal? ' + aEqualsB + '<br>' + 'Integer literals: ' + integer1 + ', ' + integer2 + '<br>' + 'Floating-point literals: ' + float1 + ', ' + float2 + '<br>' + 'Object literals: this dog has ' + dog.colors + ' color and it\'s a ' + dog.breed + ' which are ' + dog.temperament + ' dogs' + '<br>' + 'String literals: ' + string1 + ' are ' + string2 + ' for you to become a programmer in ' + string3 + ' ' + string4;
+
+		//Problem 2. Quoted text
+		var quote = '"How you doin?"',
+			person = 'Joey asked.';
+		console.log('Quoted text: '+ quote + ', ' + person);
+
+		//display Problem 2. on the web page
+		var problem2 = document.getElementById('problem2');
+		problem2.innerHTML = 'Quoted text: '+ quote + ', ' + person;
+
+		//Problem 3. Typeof variables
+		console.log('animals -> ' + typeof(animals));
+		console.log('a -> ' + typeof(a));
+		console.log('b -> ' + typeof(b));
+		console.log('aEqualsB -> ' + typeof(aEqualsB));
+		console.log('integer1 -> ' + typeof(integer1));
+		console.log('integer2 -> ' + typeof(integer2));
+		console.log('float1 -> ' + typeof(float1));
+		console.log('float2 -> ' + typeof(float2));
+		console.log('string1 -> ' + typeof(string1));
+		console.log('string2 -> ' + typeof(string2));
+		console.log('string3 -> ' + typeof(string3));
+		console.log('string4 -> ' + typeof(string4));
+		console.log('quote -> ' + typeof(quote));
+		console.log('person -> ' + typeof(person));
+
+		//display Problem 3. on the web page (part of it)
+		var problem3 = document.getElementById('problem3');
+		problem3.innerHTML = 'animals -> ' + typeof(animals) + '<br>' + 'a -> ' + typeof(a) + '<br>' + 'aEqualsB -> ' + typeof(aEqualsB) + '<br>' + 'integer1 -> ' + typeof(integer1) + '<br>' + 'float1 -> ' + typeof(float1) + '<br>' + 'string1 -> ' + typeof(string1) + '<br>' + 'quote -> ' + typeof(quote) + '<br>' + 'person -> ' + typeof(person);
+
+		//Problem 4. Typeof null
+		var check1;
+		var check2 = check1;
+		var check3 = null;
+		var check4 = undefined;
+		console.log('check1: -- is ' + typeof(check1));
+		console.log('check2: -check1- is ' + typeof(check2));
+		console.log('check3: -null- is ' + typeof(check3));
+		console.log('check4: -undefined- is ' + typeof(check4));
+
+		//display Problem 4. on the web page
+		var problem4 = document.getElementById('problem4');
+		problem4.innerHTML = 'check1 -- is ' + typeof(check1) + '<br>' + 'check2 -check1- is ' + typeof(check2) + '<br>' + 'check3 -null- is ' + typeof(check3) + '<br>' + 'check4 -undefined- is ' + typeof(check4);
+	</script>
+</body>
+</html>

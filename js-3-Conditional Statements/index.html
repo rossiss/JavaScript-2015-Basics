@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS Homework</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/style.min.css">
+</head>
+<body>
+    <div id="col1"></div>
+    <div id="col2">
+        <h1>TelerikAcademy JavaScript Fundamentals 2015</h1>
+        <h2>Conditional statements</h2>
+        <div id="tasks">
+            <h3>Problem 1. Exchange if greater</h3>
+            <p>Write an if statement that takes two double variables a and b and exchanges their values if the first one is greater than the second. As a result print the values a and b, separated by a space.</p>
+            <p id="problem1" class="output"></p>
+            <h3>Problem 2. Multiplication sign</h3>
+            <p>Write a script that shows the sign (+, - or 0) of the product of three real numbers, without calculating it. Use a sequence of if operators.</p>
+            <p id="problem2" class="output"></p>
+            <h3>Problem 3. The biggest of three</h3>
+            <p>Write a script that finds the biggest of three numbers. Use nested if statements.</p>
+            <p id="problem3" class="output"></p>
+            <h3>Problem 4. Sort 3 numbers</h3>
+            <p>Sort 3 real values in descending order. Use nested if statements. Note: Don’t use arrays and the built-in sorting functionality.</p>
+            <p id="problem4" class="output"></p>
+            <h3>Problem 5. Digit as word</h3>
+            <p>Write a script that asks for a digit (0-9), and depending on the input, shows the digit as a word (in English). Print “not a digit” in case of invalid input. Use a switch statement.</p>
+            <div class="output">
+                <input type="text" id="get-digit" />
+                <button type="button" onclick="getDigitFunc()">Digit's name</button>
+                <p id="problem5"></p>
+            </div>
+            <h3>Problem 6. Quadratic equation</h3>
+            <p>Write a script that reads the coefficients a, b and c of a quadratic equation ax2 + bx + c = 0 and solves it (prints its real roots). Calculates and prints its real roots. Note: Quadratic equations may have 0, 1 or 2 real roots.</p>
+            <div class="output">
+                <label for="coefficient-a">a: </label>
+                <input type="text" id="coefficient-a" />
+                <br>
+                <label for="coefficient-b">b: </label>
+                <input type="text" id="coefficient-b" />
+                <br>
+                <label for="coefficient-c">c: </label>
+                <input type="text" id="coefficient-c" />
+                <br>
+                <button type="button" onclick="quadraticEquation()">Quadratic equation</button>
+                <p id="problem6"></p>
+            </div>
+            <h3>Problem 7. The biggest of five numbers</h3>
+            <p>Write a script that finds the greatest of given 5 variables. Use nested if statements.</p>
+            <p id="problem7" class="output"></p>
+            <h3>Problem 8. Number as words</h3>
+            <p>Write a script that converts a number in the range [0…999] to words, corresponding to its English pronunciation.</p>
+            <div class="output">
+                <input type="text" id="get-number" />
+                <button type="button" onclick="getNumberFunc()">Number in words</button>
+                <p id="problem8"></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script/problem1-exchange-if-greater.js"></script>
+    <script type="text/javascript" src="script/problem2-multiplication-sign.js"></script>
+    <script type="text/javascript" src="script/problem3-biggest-of-three.js"></script>
+    <script type="text/javascript" src="script/problem4-sort-3-numbers.js"></script>
+    <script type="text/javascript" src="script/problem5-digit-as-word.js"></script>
+    <script type="text/javascript" src="script/problem6-quadratic-equation.js"></script>
+    <script type="text/javascript" src="script/problem7-biggest-of-5.js"></script>
+    <script type="text/javascript" src="script/problem8-number-as-words-spelling.js"></script>
+</body>
+</html>
